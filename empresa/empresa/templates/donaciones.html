@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones JASMAN</title>
+    <link rel="stylesheet" href="{% static 'css/donaciones.css' %}">
+    <link rel="icon" href="{% static 'img/Icono.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img id="logo" src="{% static 'img/logo.png' %}" alt="">
+        <a href="{% url "index" %}">INICIO </a>
+        <a href="{% url "departamentos" %}">DEPARTAMENTOS </a>
+        <a href="{% url "contacto" %}">CONTACTO</a>
+        <a href="{% url "quienesSomos" %}">QUIENES SOMOS </a>
+        <a href="{% url "donaciones" %}">DONACIONES </a>
+        <a href="{% url "ubicaciones" %}">UBICACIONES </a>
+    </header>
+    <h1>BANCO DE DONACIONES</h1>
+    <hr>
+    <div class="clase1">
+        <p> <strong> El Centro Regional de JASMAN sostiene un modelo de donación 100% voluntaria, y en ese sentido ha sido pionero en el país y la región. Desde el 2011 reemplazó el pedido de donantes de reposición, autoabasteciéndose a través de la organización de colectas externas y aportando componentes de sangre a otros hospitales cuando los requieren. Por año unas 17.000 personas donan sangre y hay 2.400 donantes de plaquetas por aféresis.
+
+            Av. Madero y Gonzalitos #3501, Col. Mitras Centro , C.P. 64460, Monterrey N.L.
+            Para consultas comunicarse a jasman@gmail.com.mx o 011-41226007
+            WhatsApp 1120270742
+            Días y horarios de atención
+            De lunes a viernes de 7 a 18 hs. y los sábados de 7 a 12 hs.
+            Sacá un turno online para donar
+            De acuerdo a tu disponibilidad y preferencia, podés optar por donar en una de nuestras colectas externas o en nuestro Banco de Sangre. Podés consultar los calendarios y reservar tu turno.</strong></p>
+    <div class="containerimg">
+
+    <img src="{% static 'img/sangre-donacion.webp' %}" alt="" class="img">
+    <img src="{% static 'img/imagen4.webp' %}" alt="" class="img">
+
+</div>
+    </div>
+    <hr>
+    <h2>¿Cuando puedo ser donante?</h2>
+    <div class="clase2">
+        <p>
+            <ul>
+            <li><strong> Gozás de buena salud.</strong></li>
+            <li><strong>Tenés entre 18 y 65 años de edad.</strong></li>
+            <li><strong>Pesás 50 kg. o más.</strong></li>
+            <li><strong>Pasaron 4 meses de tu última donación (hombres) o 6 meses de tu última donación (mujeres).</strong></li>
+            <li><strong>Si tomás algún medicamento, necesitamos saber cuál y por qué razón te lo recetaron. En el caso de antibióticos es necesario dejar pasar 7 días de la finalización del tratamiento.</strong></li>
+            <li><strong>Si Viajaste fuera del país en el último año, necesitamos saber a dónde para evitar riesgos de contagio (dengue, zika, malaria). Hacé click acá para conocer si podés donar según la región a la que viajaste.</strong></li>
+            <li><strong>Pasaron 12 meses de tu último tatuaje, piercing, sesión de acupuntura o transfusión.</strong></li>
+            <li><strong>No estás embarazada o ya pasaron 6 meses del último parto, y no estás en periodo de lactancia.</strong></li><br></p>
+        </ul>
+            <div class="img2caca"><img src="IMAGENES/imagen2.jpg" alt="" class="metal"></div>
+        </div>
+        <hr>
+
+<form action="" name="formulario" method="get">
+    <h2>TE NECESITAMOS TODOS LOS DIAS <br>
+    SACA TU TURNO PARA DONAR</h2>
+    <br>
+    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre">
+    <br>
+    <input type="text" name="edad" id="edad" maxlength="30" placeholder="Edad">
+    <br>
+    <input type="text" name="direccion" id="direccion" maxlength="30" placeholder="Direccion">
+    <br>
+    <input type="text" name="email" id="email" maxlength="30" placeholder="email">
+    <br>
+    <div class="tiposexo">
+        <label for="">Sexo: </label>
+        <select name="sexo" id="sexo">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+    <br>
+    <div class="tiposangre">
+    <label for="">Tipo de sangre: </label>
+    <select name="tipoSangre" id="tipoSangre">
+        <option value="A positivo (A+)">A positivo (A+)</option>
+        <option value="A negativo (A-)">A negativo (A-)</option>
+        <option value="B negativo (B+)">B positivo (B+)</option>
+        <option value="B negativo (B-)">B negativo (A-)</option>
+        <option value="AB positivo (AB+)">AB positivo (AB+)</option>
+        <option value="AB negativo (AB-)">AB negativo (AB-)</option>
+        <option value="O positivo (O+)">O positivo (O+)</option>
+        <option value="O negativo (O-)">    O negativo (O-)</option>
+    </select>
+</div>
+    <br>
+    <div class="containerbtn">
+    <input type="submit" id="btn" name="btn" value="Enviar">
+</div>
+</form>
+
+    <div class="clase3">
+        <p><strong>
+            Agendá turno para venir a donar a nuestro Banco de Sangre – en nuestra sede principal Av. Madero y Gonzalitos#3501, Col. Mitras Centro , C.P. 64460, Monterrey N.L.
+
+            Para que la donación sea lo más segura para todos, te pedimos lo siguiente:
+            <ol>
+            <li>Los requisitos generales para ser donante y los que agregamos en contexto Covid-19.<br></li>
+            <li>Agendar un turno y validarlo a través del mail que vas a recibir, para que finalmente quede reservado.</li>
+            <li>Contamos con estacionamiento gratuito y exclusivo para donantes.</li>
+            <li>Es muy importante que vengas en el horario que reservaste.</li>
+            <li>Utilizar el tapaboca o barbijo durante todo el proceso de donación.</li>
+            <li>Si no podes venir, avisanos para dejar el turno disponible. Y no te preocupes ¡te esperamos otro día!</li>
+            <li>Si querés donar plaquetas, comunícate con nosotros al logo whatsapp 114992-5507 o escribinos a .</li>
+            </ol>
+        <p id="psolita"><strong> Si querés donar sangre en una de nuestras campañas externas o hacernos alguna consulta, escribinos al  logo whatsapp 112027-0748.</strong></p>
+        <div class="imgcaca2">
+            <img src="{% static 'img/imagen3.webp' %}" alt="" class="imgcaca">
+        </div>
+        <br>
+    </div>
+
+    <footer>
+        <h1>SIGUENOS EN NUESTRAS REDES SOCIALES:</h1>
+        <div>
+            <img src="{% static 'img/instagram.png' %}" alt="">
+            <img src="{% static 'img/facebook.png' %}" alt="">
+            <img src="{% static 'img/youtube.png' %}" alt="">
+            <img src="{% static 'img/twitter.png' %}" alt="">
+        </div>
+        <small>© DERECHOS RESERVADOS JASMAN 2023</small>
+    </footer>
+    <script src="{% static 'js/donaciones.js' %}"></script>
+</body>
+</html>

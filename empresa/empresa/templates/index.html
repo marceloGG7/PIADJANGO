@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto JASMAN</title>
+    <link rel="stylesheet" href="{% static 'css/indexx.css' %}">
+    <link rel="icon" href="{% static 'img/Icono.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img id="logo" src="{% static 'img/logo.png' %}" alt="">
+        <a href="{% url "index" %}">INICIO </a>
+        <a href="{% url "departamentos" %}">DEPARTAMENTOS </a>
+        <a href="{% url "contacto" %}">CONTACTO</a>
+        <a href="{% url "quienesSomos" %}">QUIENES SOMOS </a>
+        <a href="{% url "donaciones" %}">DONACIONES </a>
+        <a href="{% url "ubicaciones" %}">UBICACIONES </a>
+    </header>
+    <main>
+        <section id="seccion1">
+            <h1>HOSPITAL JASMAN, institución médica de Alta Especialidad, soportada en la tecnología médica de vanguardia, contando con la más moderna infraestructura y brindando un servicio de excelencia, que lo posicionan como uno de los hospitales más importantes de Nuevo León.</h1>
+            <img src="{% static 'img/hospitalinteligente.jpg.' %}" alt="">
+            <img src="{% static 'img/hospitalinteligente2.jpg.' %}" alt="">
+            <img src="{% static 'img/hospitaldigital.jpg.' %}" alt="">
+        </section>
+
+        <section id="seccion2">
+            <h2>+MAS DE 10 AÑOS DE EXPERIENCIA.</h2>
+            <h1>TRABAJO EN EQUIPO POR TU SALUD.</h1>
+        </section>
+        <section id="seccion3">
+            <h2 id="h21">PIONEROS EN MEDICINA LABORAL Y PARA TODA LA FAMILIA.</h2>
+            <p id="p1"> <strong>Iniciamos operaciones como clínica JASMAN y hoy a más de 10 años de nuestra fundación, en HOSPITAL JASMAN continuamos brindando servicios médicos basados en valores, principios y prácticas por el bien de la salud de la sociedad, además de atender la medicina laboral de las principales empresas del estado.
+                        Mantenemos y elevamos el servicio médico apegado a valores y políticas de calidad. Siempre apoyado por un sólido equipo altamente capacitado y calificado en atención de servicio y manteniéndose a la vanguardia en tecnología médica.</strong>
+            </p>
+            <img id="img1" src="{% static 'img/doctores.jpg' %}" alt="">
+        </section>
+        <section id="seccion4">
+            <h1>UN HOSPITAL CÓMODO Y SEGURO</h1>
+            <p><strong>Desde las áreas de espera hasta las habitaciones, cada espacio ha sido cuidadosamente diseñado para proporcionarte un entorno acogedor y relajante. Además, hemos implementado rigurosas medidas de seguridad para garantizar tu tranquilidad, incluyendo sistemas de control de infecciones y protocolos sanitarios actualizados. En nuestro hospital, tu bienestar es nuestra prioridad, y nos esforzamos por crear un ambiente en el que te sientas cómodo y seguro en todo momento.</strong></p>
+            <img src="{% static 'img/hospital.jpg' %}" alt="">
+            <img src="{% static 'img/habitacion.jpg' %}" alt="">
+            <img src="{% static 'img/ambulancia.jpg' %}" alt="">
+        </section>
+        <section id="seccion5">
+            <h1>UN HOSPITAL DIGITAL</h1>
+            <p><strong>En Hospital JASMAN, combinamos tecnología de vanguardia con la calidez humana que nos distingue para brindarte una experiencia excepcional en tu atención. Con la implementación de un expediente clínico electrónico, optimizamos los tiempos de atención mediante la automatización de tareas y procesos de manera digital. Este expediente contiene información clínica en tiempo real del paciente, lo que facilita a los médicos tomar decisiones informadas y precisas para brindarte el mejor cuidado posible.</strong></p>
+        </section>
+    </main>
+    <footer>
+        <h1>SIGUENOS EN NUESTRAS REDES SOCIALES:</h1>
+        <div>
+            <img src="{% static 'img/instagram.png' %}" alt="">
+            <img src="{% static 'img/facebook.png' %}" alt="">
+            <img src="{% static 'img/youtube.png' %}" alt="">
+            <img src="{% static 'img/twitter.png' %}" alt="">
+        </div>
+        <small>© DERECHOS RESERVADOS JASMAN 2023</small>
+    </footer>
+</body>
+</html>

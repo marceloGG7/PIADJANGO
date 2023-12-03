@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades JASMAN</title>
+    <link rel="stylesheet" href="{% static 'css/departamentos.css' %}">
+    <link rel="icon" href="{% static 'img/Icono.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img id="logo" src="{% static 'img/logo.png' %}" alt="">
+        <a href="{% url "index" %}">INICIO </a>
+        <a href="{% url "departamentos" %}">DEPARTAMENTOS </a>
+        <a href="{% url "contacto" %}">CONTACTO</a>
+        <a href="{% url "quienesSomos" %}">QUIENES SOMOS </a>
+        <a href="{% url "donaciones" %}">DONACIONES </a>
+        <a href="{% url "ubicaciones" %}">UBICACIONES </a>
+    </header>
+    <main>
+        <div id="titulo">
+            <b>Departamentos</b>
+        </div>
+        <section>
+            <img id="img1" src="{% static 'img/doctora.png' %}" alt="">
+        </section>
+    </main>
+
+    {% for departamento in datos %}
+        <div id="div1">
+            <h1 > {{departamento.nombre}} </h1>
+            <p><strong>{{departamento.descripcion}}</strong></p>
+        </div>
+    {% endfor %}
+
+    <footer>
+        <h1>SIGUENOS EN NUESTRAS REDES SOCIALES:</h1>
+        <div>
+            <img src="{% static 'img/instagram.png' %}" alt="">
+            <img src="{% static 'img/facebook.png' %}" alt="">
+            <img src="{% static 'img/youtube.png' %}" alt="">
+            <img src="{% static 'img/twitter.png' %}" alt="">
+        </div>
+        <small>© DERECHOS RESERVADOS JASMAN 2023</small>
+    </footer>
+</body>
+</html>

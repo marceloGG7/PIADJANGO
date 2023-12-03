@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros JASMAN</title>
+    <link rel="icon" href="{% static 'img/Icono.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/quienesSomos.css' %}">
+</head>
+<body>
+    <header>
+        <img id="logo" src="{% static 'img/logo.png' %}" alt="">
+        <a href="{% url "index" %}">INICIO </a>
+        <a href="{% url "departamentos" %}">DEPARTAMENTOS </a>
+        <a href="{% url "contacto" %}">CONTACTO</a>
+        <a href="{% url "quienesSomos" %}">QUIENES SOMOS </a>
+        <a href="{% url "donaciones" %}">DONACIONES </a>
+        <a href="{% url "ubicaciones" %}">UBICACIONES </a>
+    </header>
+
+    <main>
+        <section id="seccion1">
+            <h1>SOMOS UN SISTEMA DE SALUD INSPIRADOS EN NUESTROS PACIENTES</h1>
+            <p> <strong>Somos una institución inspirada a dedicarnos a brindar atención médica integral, y desarrollar profesionales de la salud. Nuestro sistema de salud está conformado por hospitales, centros de atención médica, ambulancias, escuelas de enfermería, clínicas de asistencia social y más de 7,000 Colaboradores y 5,800 médicos comprometidos con el bienestar de nuestras comunidades. Estamos llamados a servir con amor, dignidad y empatía.</strong></p>
+            <img id="imgb" src="{% static 'img/medicina-familiar.jpg' %}" alt="">
+        </section>
+
+    <div id="seccionContainer">
+        <section id="seccion2">
+            <h1 id="h1">MISION</h1>
+            <p id="pc"> <strong>Brindar una atención médico-hospitalaria a nuestros pacientes y usuarios, con los más altos estándares de calidad integral, buscando siempre exceder sus expectativas y fomentando el desarrollo de una cultura organizacional excelente.</strong></p>
+            <img id="imgc" src="{% static 'img/hospitalinteligente2.jpg' %}" alt="">
+        </section>
+        <section id="seccion3">
+            <h1 id="h1">VISION</h1>
+            <p id="pd"> <strong>Establecernos como una institución médica líder a nivel mundial, promotora de avances en medicina y tecnología.
+                Constituirnos como la cadena de hospitales más importante del Norte del País y una de las más grandes del país.</strong></p>
+            <img id="imgd" src="{% static 'img/hospitalinteligente.jpg' %}" alt="">
+        </section>
+    </div>
+
+    <div id="seccionContainer2">
+        <section id="seccion4">
+            <h1 id="h1">Valores</h1>
+            <p id="pf"><strong>Algunos de los valores son:</strong></p>
+            <ol>
+                <li><strong>Lealtad</strong></li>
+                <li><strong>Trabajo en equipo</strong></li>
+                <li><strong>Integridad</strong></li>
+                <li><strong>Calidez</strong></li>
+                <li><strong>Comprension</strong></li>
+            </ol>
+            <img id="imgj" src="{% static 'img/imagen_valores.png' %}" alt="">
+        </section>
+        <section id="seccion5">
+            <h1 id="h1">OBJETIVOS DE CALIDAD</h1>
+            <p id="pa"><strong>Algunos objetivos de calidad son:</strong></p>
+            <ol>
+                <li><strong>Satisfaccion del cliente</strong></li>
+                <li><strong>Calidad de la atención</strong></li>
+                <li><strong>Satisfacción y desarrollo del personal</strong></li>
+                <li><strong>Rentabilidad</strong></li>
+            </ol>
+            <img id="imgk" src="{% static 'img/objetivos.png' %}" alt="">
+        </section>
+    </div>
+    </main>
+    <footer>
+        <h1>SIGUENOS EN NUESTRAS REDES SOCIALES:</h1>
+        <div>
+            <img src="{% static 'img/instagram.png' %}" alt="">
+            <img src="{% static 'img/facebook.png' %}" alt="">
+            <img src="{% static 'img/youtube.png' %}" alt="">
+            <img src="{% static 'img/twitter.png' %}" alt="">
+        </div>
+        <small>© DERECHOS RESERVADOS JASMAN 2023</small>
+    </footer>
+</body>
+</html>

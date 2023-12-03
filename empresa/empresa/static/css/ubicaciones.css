@@ -1,0 +1,372 @@
+/* Predeterminado */
+
+* {
+    font-family: 'Lucida Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #5776ab;
+    margin: 0 30px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+header a:hover {
+    background-color: #eb252c;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer h1 {
+    color: #2c5494;
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 30px;
+    margin-bottom: 20px;
+}
+
+footer small {
+    color: #2c5494;
+    margin-top: 30px;
+}
+
+/* main 1 */
+
+#main1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color:#eb252c;
+    font-size: 25px;
+    border: 3px solid black;
+  }
+
+#div1 h2 {
+    font-size: 25px;
+}
+
+#div2 label,select,option {
+    font-size: 25px;
+}
+
+/* Encabezado */
+
+#Cede {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    font-size: 30px;
+}
+
+/* Main 2 */
+
+/* San Nicolas */
+
+#seccion1 {
+    background-color:white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+#SanNicolas {
+    display: flex;
+    align-items: center;
+    background-color:#5776ab;
+    margin-right: 160px;
+    margin-left: 160px;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+#SanNicolas img {
+    width: 700px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 30px;
+  }
+
+#DivSanNicolas {
+    text-align: center;
+    font-size: 25px;
+}
+
+#DivSanNicolas button {
+    background-color: #eb252c;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+#DivSanNicolas button:hover {
+    cursor: pointer;
+}
+
+/* Escobedo */
+
+#seccion2 {
+    background-color:white;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#Escobedo {
+    display: flex;
+    align-items: center;
+    background-color:#5776ab;
+    margin-right: 160px;
+    margin-left: 160px;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+#Escobedo img {
+    width: 700px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 30px;
+  }
+
+#DivEscobedo {
+    text-align: center;
+    font-size: 25px;
+}
+
+#DivEscobedo button {
+    background-color: #eb252c;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+#DivEscobedo button:hover {
+    cursor: pointer;
+}
+
+/* Apodaca */
+
+#seccion3 {
+    background-color:white;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#Apodaca {
+    display: flex;
+    align-items: center;
+    background-color:#5776ab;
+    margin-right: 160px;
+    margin-left: 160px;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+#Apodaca img {
+    width: 700px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 30px;
+  }
+
+#DivApodaca {
+    text-align: center;
+    font-size: 25px;
+}
+
+#DivApodaca {
+    padding-left: 50px;
+}
+
+#DivApodaca p {
+    padding-left: 50px;
+}
+
+#DivApodaca button {
+    background-color: #eb252c;
+    border: 2px solid black;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#DivApodaca button:hover {
+    cursor: pointer;
+}
+
+/* Guadalupe */
+
+#seccion4 {
+    background-color:white;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#Guadalupe {
+    display: flex;
+    align-items: center;
+    background-color:#5776ab;
+    margin-right: 160px;
+    margin-left: 160px;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+#Guadalupe img {
+    width: 700px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+#DivGuadalupe {
+    text-align: center;
+    font-size: 25px;
+}
+
+#DivGuadalupe button {
+    background-color: #eb252c;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+#DivGuadalupe button:hover {
+    cursor: pointer;
+}
+
+/* San Pedro */
+
+#seccion5 {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#SanPedro {
+    display: flex;
+    align-items: center;
+    background-color:#5776ab;
+    margin-right: 160px;
+    margin-left: 160px;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+#SanPedro img {
+    width: 700px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 30px;
+  }
+
+#DivSanPedro {
+    text-align: center;
+    font-size: 25px;
+}
+
+#DivSanPedro button {
+    background-color: #eb252c;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+#DivSanPedro button:hover {
+    cursor: pointer;
+}
+
+/* Zuazua */
+
+#seccion6 {
+    background-color:white;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#Zuazua {
+    display: flex;
+    align-items: center;
+    background-color:#5776ab;
+    margin-right: 160px;
+    margin-left: 160px;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+#Zuazua img {
+    width: 700px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+#DivZuazua {
+    text-align: center;
+    font-size: 25px;
+}
+
+#DivZuazua h2 {
+    padding-left: 80px;
+}
+
+#DivZuazua p {
+    padding-left: 80px;
+}
+
+#DivZuazua button {
+    background-color: #eb252c;
+    border: 2px solid black;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+#DivZuazua button:hover {
+    cursor: pointer;
+}
+
+/* Main 3 */
+
+#main3 {
+    background-color: #eb252c;
+    border: 3px solid black;
+}
+
+#main3 h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#main3 hr {
+    margin-top: 15px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 15px;
+}

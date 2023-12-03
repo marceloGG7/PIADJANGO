@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/Icono.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/ubicaciones.css' %}">
+    <title>Ubicaciones JASMAN</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="{% static 'img/logo.png' %}" alt="">
+        <a href="{% url "index" %}">INICIO </a>
+        <a href="{% url "departamentos" %}">DEPARTAMENTOS </a>
+        <a href="{% url "contacto" %}">CONTACTO</a>
+        <a href="{% url "quienesSomos" %}">QUIENES SOMOS </a>
+        <a href="{% url "donaciones" %}">DONACIONES </a>
+        <a href="{% url "ubicaciones" %}">UBICACIONES </a>
+    </header>
+
+
+    <main id="main1">
+        <div id="div1">
+            <h2>HOSPITAL JASMAN - UBICACIONES</h2>
+        </div>
+
+        <div id="div2">
+            <label for="MUNICIPIO">MUNICIPIO :</label>
+            <select name="MUNICIPIO" id="MUNICIPIO" onchange="redirigir()">
+                <option value="SanNicolas">San Nicolas</option>
+                <option value="Escobedo">Escobedo</option>
+                <option value="Apodaca">Apodaca</option>
+                <option value="Guadalupe">Guadalupe</option>
+                <option value="SanPedro">San Pedro</option>
+                <option value="Zuazua">Zuazua</option>
+            </select>
+        </div>
+    </main>
+    <h2 id="Cede">SEDE : NUEVO LEON</h2>
+    <main id="main2">
+        <section id="seccion1">
+            <div id="SanNicolas">
+                <img src="{% static 'img/San Nicolas-Hospital.jpg' %}" alt="San Nicolas HOSPITAL">
+                <div id="DivSanNicolas">
+                    <h2>San Nicolas</h2>
+                    <br>
+                    <p>Av. Madero y Gonzalitos#3501 <br> Col. Mitras Centro <br> C.P. 64460 <br> Monterrey N.L. <br> Tel: (81) 8389 1111</p>
+                    <br>
+                    <a href="https://www.google.com.mx/maps/place/Hospital+Universitario+Dr.+Jos%C3%A9+Eleuterio+Gonz%C3%A1lez/@25.6887861,-100.3500984,17z/data=!3m1!4b1!4m6!3m5!1s0x866295e3ad170c2d:0x5f52165d7842c884!8m2!3d25.6887861!4d-100.3500984!16s%2Fg%2F1tcvc9r5?hl=en&entry=ttu" target="_blank"><button>Visitar en Google Maps</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="seccion2">
+            <div id="Escobedo">
+                <img src="{% static 'img/Escobedo-Hospital.jpg' %}" alt="Escobedo HOSPITAL">
+                <div id="DivEscobedo">
+                    <h2>Escobedo</h2>
+                    <br>
+                    <p>Av. Adolfo López Mateos #4600 <br> Col. Bosques del Nogalar <br> C.P. 66480 <br> Escobedo N.L. <br> Tel: (81) 8305 5900</p>
+                    <br>
+                    <a href="https://www.google.com.mx/maps/place/Hospital+Metropolitano+%22Dr.+Bernardo+Sep%C3%BAlveda%22/@25.7140823,-100.2765735,17z/data=!3m1!4b1!4m5!3m4!1s0x86629524debf54b9:0x5cbd347ba8b8c1f8!8m2!3d25.7140775!4d-100.2743848?hl=en&shorturl=1" target="_blank"><button>Visitar en Google Maps</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="seccion3">
+
+            <div id="Apodaca">
+                <img src="{% static 'img/Apodaca-Hospital.webp' %}" alt="Apodaca HOSPITAL">
+                <div id="DivApodaca">
+                    <h2>Apodaca</h2>
+                    <br>
+                    <p>Avenida San Rafael #450 <br> Col. San Rafael <br> C.P. 67140 <br> Apodaca N.L. <br> Tel: (81) 8131 3285</p>
+                    <br>
+                    <a href="https://www.google.com.mx/maps/place/Hospital+Regional+Materno+Infantil+de+Alta+Especialidad/@25.6946769,-100.225438,17z/data=!3m1!4b1!4m5!3m4!1s0x8662ea8f7508f847:0xdb14c731f95a539b!8m2!3d25.6946721!4d-100.2232493?hl=en&shorturl=1" target="_blank"><button>Visitar en Google Maps</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="seccion4">
+            <div id="Guadalupe">
+                <img src="{% static 'img/Guadalupe-Hospital.webp' %}" alt="Guadalupe HOSPITAL">
+                <div id="DivGuadalupe">
+                    <h2>Guadalupe</h2>
+                    <br>
+                    <p>Capitán Mariano Azueta #680Col <br> Buenos Aires <br> Guadalupe N.L. <br> Tel: (81) 8120 5858</p>
+                    <br>
+                    <a href="https://www.google.com.mx/maps/place/unidad+de+rehabilitacion+psiquiatrica/@25.667555,-100.2891163,17z/data=!3m1!4b1!4m5!3m4!1s0x8662bfdc8deb0ef7:0x2f2f325f2b82fb32!8m2!3d25.6675502!4d-100.2869276?hl=en&shorturl=1" target="_blank"><button>Visitar en Google Maps</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="seccion5">
+
+            <div id="SanPedro">
+                <img src="{% static 'img/San Pedro-Hospital.jpg' %}" alt="San Pedro HOSPITAL">
+                <div id="DivSanPedro">
+                    <h2>San Pedro</h2>
+                    <br>
+                    <p>Ave. Pino Suarez entre 15 de Mayo <br> C.P. 64000 <br> Monterrey, N.L <br> Tel: (81) 8342 4371</p>
+                    <br>
+                    <a href="https://www.google.com.mx/maps/place/Unidad+Medica+de+Alta+Especialidad+Hospital+de+Traumatolog%C3%ADa+y+Ortopedia+N%C3%BAm.+21/@25.6721051,-100.3194813,18z/data=!4m12!1m6!3m5!1s0x8662be270324fb55:0x5618b8f943bb8e07!2sUnidad+Medica+de+Alta+Especialidad+Hospital+de+Traumatolog%C3%ADa+y+Ortopedia+N%C3%BAm.+21!8m2!3d25.671909!4d-100.3195135!3m4!1s0x8662be270324fb55:0x5618b8f943bb8e07!8m2!3d25.671909!4d-100.3195135?hl=en&shorturl=1" target="_blank"><button>Visitar en Google Maps</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="seccion6">
+            <div id="Zuazua">
+                <img src="{% static 'img/Zuazua-Hospital.jpg' %}" alt="Zuazua HOSPITAL">
+                <div id="DivZuazua">
+                    <h2>Zuazua</h2>
+                    <br>
+                    <p>Av. Lincoln s/n <br> C.P. 64360 <br> Valle Verde 1er Sector <br> Monterrey, N.L. <br> Tel: (81) 8381 4813</p>
+                    <br>
+                    <a href="https://www.google.com.mx/maps/place/IMSS+Hospital+de+Cardiologia+34/@25.7251096,-100.3723606,15.5z/data=!4m8!1m2!2m1!1sUnidad+M%C3%A9dica+de+Alta+Especialidad+No.+34!3m4!1s0x0:0xdffe6c98ba274d1d!8m2!3d25.7294341!4d-100.3703642?hl=en&shorturl=1" target="_blank"><button>Visitar en Google Maps</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="main3">
+        <section>
+            <h2>Proximamente, sede en Coahuila ... </h2>
+            <hr>
+    </main>
+
+    <footer>
+        <h1>SIGUENOS EN NUESTRAS REDES SOCIALES:</h1>
+        <div>
+            <img src="{% static 'img/instagram.png' %}" alt="">
+            <img src="{% static 'img/facebook.png' %}" alt="">
+            <img src="{% static 'img/youtube.png' %}" alt="">
+            <img src="{% static 'img/twitter.png' %}" alt="">
+        </div>
+        <small>© DERECHOS RESERVADOS JASMAN 2023</small>
+    </footer>
+    <script src="{% static 'js/ubicaciones.js' %}"></script>
+</body>
+</html>

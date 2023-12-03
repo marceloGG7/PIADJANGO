@@ -1,0 +1,140 @@
+* {
+    font-family: 'Lucida Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 4px solid #2c5494;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #5776ab;
+    margin: 0 30px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+header a:hover {
+    background-color: #eb252c;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+#seccionConc h2 {
+    color:#eb252c;
+}
+
+#seccionConc {
+    margin-bottom: 15px;
+}
+
+#seccionConc form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+#seccionConc label {
+    display: block;
+    margin-bottom: 8px;
+}
+#seccionConc input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#seccionConc #btn {
+    background-color: #2c5494;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#seccionConc #btn {
+    background-color: #eb252c;
+}
+
+label{
+    color: #2c5494;
+    font-weight: bold;
+}
+
+#seccionConc1 {
+    text-align: center;
+    padding: 15px;
+}
+
+#seccionconcimg img {
+    margin: 0 auto;
+    display: block;
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.divdecontacto {
+    padding: 15px
+}
+
+.divdecontacto img {
+    width: 50px;
+    margin: 0 30px;
+    margin-bottom: 20px;
+
+}
+
+.divdecontacto p {
+    color: #2c5494;
+}
+
+#seccionConc1 h2 {
+    color:#eb252c;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    border-top: 4px solid #2c5494;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer h1 {
+    color: #2c5494;
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 30px;
+    margin-bottom: 20px;
+}
+
+footer small {
+    color: #2c5494;
+    margin-top: 30px;
+}
